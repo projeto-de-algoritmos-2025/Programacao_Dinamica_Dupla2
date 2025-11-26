@@ -81,7 +81,31 @@ def main():
         Item("Hambúrguer", 600, 60),
         Item("Salada", 100, 20),
         Item("Refrigerante", 300, 10),
-        Item("Batata Frita", 400, 45)
+        Item("Batata Frita", 400, 45),
+        Item("Milkshake de Chocolate", 800, 95),
+        Item("Barca de Açaí com Leite Ninho", 1000, 110),
+        Item("Coxinha com Catupiry", 350, 40),
+        Item("Lasanha Bolonhesa", 900, 100),
+        Item("Balde de Frango Frito", 1600, 180),
+        Item("Churros de Doce de Leite", 350, 45),
+        Item("Pastel de Feira Especial", 500, 60),
+        Item("Brigadeirão", 250, 35),
+        Item("Feijoada Completa", 1400, 160),
+        Item("Pudim", 300, 40),
+        Item("X-Bacon Duplo", 1100, 130),
+        Item("Rodízio de Churrasco", 2000, 300),
+        Item("Pacote de Bolacha Recheada", 650, 50),
+        Item("Petit Gateau com Sorvete", 500, 75),
+        Item("Cachorro Quente com Purê", 700, 70),
+        Item("Macarrão Carbonara", 800, 90),
+        Item("Fatia Torta de Limão (Fatia)", 400, 55),
+        Item("Pote de Sorvete", 950, 105),
+        Item("Donuts Recheado", 300, 35),
+        Item("Cerveja Artesanal", 250, 20),
+        Item("Doritos com Cheddar ", 750, 85),
+        Item("Brownie de Chocolate", 400, 50),
+        Item("Escondidinho de Carne Seca", 600, 70),
+        Item("Torresmo de Rolo", 550, 65)
     ]
     
     print("\n--- Itens Disponíveis ---")
@@ -93,15 +117,17 @@ def main():
     
     melhor_valor, lista_itens = Knapsack_com_itens(itens, capacidade)
     
-    print(f"\nMelhor 'Delícia' Possível: {melhor_valor}")
+    print(f"\n{melhor_valor} pontos de delicia")
     print("Itens Escolhidos (Backtracking):")
     peso_total = 0
     for item in lista_itens:
-        print(f" -> {item.nome} ({item.peso}g)")
+        print(f" -> {item.nome} ({item.peso} calorias)")
         peso_total += item.peso
     
-    print(f"\nPeso total utilizado: {peso_total}g de {capacidade}g")
-    print(f"Capacidade restante: {capacidade - peso_total}g")
-
+    print(f"\nPeso total utilizado: {peso_total} calorias de {capacidade} calorias")
+    
+    calorias_restantes = capacidade - peso_total
+    gramas_acucar = calorias_restantes / 3.8
+    print(f"Como sobraram {calorias_restantes} calorias voce pode comer {gramas_acucar:.1f} gramas de açúcar puro")
 if __name__ == "__main__":
     main()
