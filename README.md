@@ -91,4 +91,4 @@ python main.py
 - `README.md` — documentação e instruções do projeto.
 
 ## Apresentação
-Vídeo disponível em: [Vídeo](#) <!-- Substituir # pelo link quando disponível -->
+Vídeo disponível em: [Vídeo](https://youtu.be/WpSouqRjYZY) 
