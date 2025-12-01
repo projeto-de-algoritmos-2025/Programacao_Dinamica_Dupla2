@@ -61,7 +61,19 @@ Obs: O exemplo acima é ilustrativo; a combinação depende da capacidade inseri
 Abaixo estão capturas de tela do programa em execução (exemplos):
 
 <p align="center">
-  <img src="assets/modelo.png" alt="Print 1" width="700px"/>
+  <img src="assets/input_3000.png" alt="Print 1" width="700px"/>
+</p>
+
+<p align="center">
+  <img src="assets/resultado_3000.png" alt="Print 2" width="700px"/>
+</p>
+
+<p align="center">
+  <img src="assets/input_4321.png" alt="Print 3" width="700px"/>
+</p>
+
+<p align="center">
+  <img src="assets/resultado_4321.png" alt="Print 4" width="700px"/>
 </p>
 
 ## Instalação
