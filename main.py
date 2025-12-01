@@ -129,7 +129,7 @@ def main():
     calorias_restantes = capacidade - peso_total
     gramas_acucar = calorias_restantes / 3.8
     if (calorias_restantes > 0):
-        print(f"Como sobraram {calorias_restantes} calorias voce pode comer {gramas_acucar:.1f} gramas de açúcar puro")
+        print(f"Como sobraram {calorias_restantes} calorias você pode comer {gramas_acucar:.1f} gramas de açúcar puro")
     else:
         print("Não tinha como ter comido melhor!!!")
 if __name__ == "__main__":
